@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<link rel="icon" type="image/png" href="avatar.jpg" sizes="16x16">
+<link rel="icon" type="image/png" href="avatar.jpg" sizes="32x32">
+<link rel="icon" type="image/png" href="avatar.jpg" sizes="96x96">
+<head>
+<style>
+* {
+box-sizing:border-box;
+padding:0;
+margin:0;
+font-family: 'Lato', sans-serif;
+}
+
+#container {
+width:100%;
+}
+span#namezzz{
+float:left;
+background: #e4e4e4;
+}
+ul {
+	text-align:center;
+	background: #e4e4e4;
+	margin:0;
+	height:45px;
+	padding:0;
+	list-style-type:none;
+	text-decoration: none;
+	cursor: default;
+}
+
+li {
+	display:inline;
+	background: #e4e4e4;
+	text-align: center;
+	height:40px;
+	padding: 12px 10px 14px 10px;
+	line-height:40px;
+	font-size: 15px;
+	margin:0;
+	width:15px;
+}
+li:hover {
+	background: #d4d4d4;
+	}
+a {
+text-decoration: none;
+background: #e4e4e4;
+color:black;
+padding: 12px 10px 14px 10px;
+}
+a:hover {
+background: #d4d4d4;
+   
+}
+#generated {
+display:block;
+margin:0 auto;
+text-align:center;
+font-size:48px;
+width:100%;
+background:white;
+margin-top:200px;
+position:static;
+color:#e4e4e4;
+}
+button {
+display:block;
+position:static;
+margin:50px auto 50px auto;
+padding:10px 25px;
+font-size:24px;
+background:#e4e4e4;
+border:none;
+
+}
+button:hover {
+background:#d4d4d4;
+}
+button:focus {
+outline:none;
+}
+</style>
+</head>
+<body>
+<div id="container">
+<ul>
+	
+	<li id="homez"><a href="https://twitter.com/REAL_O5_COUNCIL">The best twitter EVER!!!!!!!!!!</a></li>
+	<span>
+</ul>
+
+<div id="generated">.</div>
+<button type="button" onclick="generateName()">Generate</button>
+</div>
+<script>
+var firstWord = ["scp","O5","D-","maelchor","when day","Maelchlor @Maelchlor Follows you Programmer, decent cook, father of three, pun addict, dungeon master, and happen to be a bit of a gamer on the side. Trying to be uplifting to those around me. United StatesBorn May 13Joined July 2013 665 Following 70 Followers"];
+var secondWord = ["Suck","CRINGE!","Maelchlor liked 2 of your Tweets"];
+function generateName() {
+	document.getElementById("generated").style.color = "black";
+	var fWnum = Math.floor(Math.random() * firstWord.length);
+	var sWnum = Math.floor(Math.random() * secondWord.length);
+	var named = firstWord[fWnum] + " " + secondWord[sWnum];
+    document.getElementById("generated").innerHTML = named;
+    
+}
+
+</script>
+</body>
+</html>
